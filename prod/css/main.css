@@ -1,0 +1,274 @@
+/* base styles */
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* latin */
+@font-face {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Futura New Medium"), url("../fonts/futura.ttf") format("ttf"); }
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+  fieldset legend {
+    padding: 0; }
+
+@keyframes flyForwards {
+  0% {
+    transform: translatex(0) rotate(-90deg) translateZ(0); }
+  50% {
+    transform: translatex(-2rem) rotate(-180deg) translateZ(0); }
+  100% {
+    transform: translatex(0) rotate(-270deg) translateZ(0); } }
+
+@keyframes flyBackwards {
+  0% {
+    transform: translatex(0) rotate(270deg) translateZ(0); }
+  50% {
+    transform: translatex(-2rem) rotate(180deg) translateZ(0); }
+  100% {
+    transform: translatex(0) rotate(270deg) translateZ(0); } }
+
+body {
+  font-family: 'Lato'; }
+
+.background {
+  background: url("../images/background1.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 300ms; }
+
+body[data-active='0'] .background {
+  filter: blur(6px); }
+
+body[data-active='1'] .background {
+  filter: blur(4px); }
+
+body[data-active='2'] .background {
+  filter: blur(3px); }
+
+body[data-active='3'] .background {
+  filter: blur(2px); }
+
+body[data-active='4'] .background {
+  filter: blur(1px); }
+
+body[data-active='5'] .background {
+  filter: none; }
+
+/* component styles */
+header {
+  padding: 1em 3em;
+  background: white; }
+
+.book {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  max-width: 55rem;
+  margin: 7rem auto; }
+  .book h2 {
+    color: #216F90; }
+  .book aside {
+    background: #216F90;
+    color: white;
+    padding: 1rem 3rem;
+    height: 28rem; }
+    .book aside h1 {
+      font-size: 3.75em;
+      border-bottom: 1px solid white;
+      margin-bottom: 1.5rem;
+      font-family: 'Futura';
+      font-weight: 500;
+      padding-bottom: 1rem;
+      padding-left: 2.5rem;
+      line-height: 1.1; }
+    .book aside .plane {
+      position: absolute;
+      height: 20px;
+      opacity: 0;
+      will-change: transform; }
+      .book aside .plane.flyForwards {
+        transform: rotate(180deg);
+        transition: 1000ms;
+        opacity: 1;
+        animation: flyForwards 1000ms forwards; }
+      .book aside .plane.flyBackwards {
+        transform: rotate(0);
+        transition: 1000ms;
+        opacity: 1;
+        animation: flyBackwards 1000ms forwards; }
+    .book aside ol {
+      padding: 2rem 1rem;
+      position: relative; }
+      .book aside ol:before {
+        content: '';
+        height: 55%;
+        width: 1px;
+        border-left: 1px dashed white;
+        position: absolute;
+        left: -0.155rem;
+        top: 20%; }
+      .book aside ol li {
+        margin-bottom: 1rem;
+        position: relative; }
+        .book aside ol li:before {
+          content: '';
+          position: absolute;
+          left: -24px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 0.76rem;
+          height: 0.76rem;
+          border-radius: 100px;
+          border: 2px solid white;
+          background: #216F90;
+          transition: 300ms; }
+        .book aside ol li:after {
+          content: '';
+          position: absolute;
+          left: -21px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 0.4rem;
+          height: 0.4rem;
+          border-radius: 100px;
+          transition: 300ms; }
+        .book aside ol li.done:before {
+          border-color: #0DA6E0; }
+        .book aside ol li.done:after {
+          background: #0DA6E0; }
+        .book aside ol li.active:before {
+          border-color: #0DA6E0; }
+        .book aside ol li.active:after {
+          background: white; }
+  .book form {
+    background: white;
+    height: max-content;
+    padding: 2rem 3rem; }
+    .book form fieldset {
+      display: none; }
+      .book form fieldset.active {
+        display: block; }
+      .book form fieldset legend {
+        font-size: 1.875em;
+        color: #216F90;
+        margin-bottom: 1.5rem; }
+      .book form fieldset label, .book form fieldset small {
+        display: block;
+        font-size: 1em;
+        color: #216F90;
+        margin-bottom: 0.3rem; }
+      .book form fieldset .radiogroup {
+        display: flex; }
+        .book form fieldset .radiogroup label {
+          margin-right: 1rem; }
+      .book form fieldset .inputGroup {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em; }
+      .book form fieldset .passenger {
+        grid-template-columns: 1fr 1fr 1rem; }
+      .book form fieldset .flight {
+        border: 1px solid #D1D1D1;
+        box-shadow: 0px 0px 2px 1px #D1D1D1;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        position: relative; }
+        .book form fieldset .flight time {
+          color: #216F90; }
+        .book form fieldset .flight span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 1rem 1.5rem;
+          font-size: 1.875rem;
+          background: #216F90;
+          color: white; }
+        .book form fieldset .flight .bookNow {
+          margin-bottom: 1rem;
+          float: none;
+          margin-left: auto;
+          display: block; }
+      .book form fieldset input {
+        margin-bottom: 1rem;
+        font-size: 1em; }
+        .book form fieldset input:not([type="radio"]) {
+          border: 1px solid #E5E6E6;
+          border-radius: 3px;
+          width: calc(100% - 3px);
+          height: 2rem;
+          box-shadow: -3px 0 0px 0px #E5E6E6;
+          transform: translateX(3px);
+          padding: 1.5rem 1rem; }
+          .book form fieldset input:not([type="radio"]):focus {
+            outline: none;
+            border-color: #0DA6E0;
+            box-shadow: -3px 0 0px 0px #0DA6E0; }
+      .book form fieldset button {
+        font-size: 1em;
+        padding: 0.5rem 1rem;
+        border: 0; }
+        .book form fieldset button.next, .book form fieldset button.bookNow {
+          background: #E77B2F;
+          color: white;
+          float: right; }
+        .book form fieldset button.prev, .book form fieldset button.addPerson {
+          padding-left: 0;
+          color: #0DA6E0;
+          text-transform: lowercase; }
+          .book form fieldset button.prev img, .book form fieldset button.addPerson img {
+            height: 0.8rem; }
+        .book form fieldset button.addPerson {
+          display: block; }
+        .book form fieldset button.remove {
+          padding: 0; }

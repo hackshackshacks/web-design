@@ -69,14 +69,13 @@ const app = {
       this.elements.plane.classList.add('flyForwards')
       setTimeout(() => {
         this.elements.plane.classList.remove('flyForwards')
-      }, 500)
+      }, 1000)
     } else if (direction === 'backwards') {
       this.elements.plane.classList.add('flyBackwards')
       setTimeout(() => {
         this.elements.plane.classList.remove('flyBackwards')
-      }, 500)
+      }, 1000)
     }
-
   }
 }
 app.init()

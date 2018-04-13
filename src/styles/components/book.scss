@@ -25,17 +25,18 @@
       position: absolute;
       height: 20px;
       opacity: 0;
+      will-change: transform;
       &.flyForwards {
         transform: rotate(180deg);
-        transition: 500ms;
+        transition: 1000ms;
         opacity: 1;
-        animation: flyForwards 500ms forwards;
+        animation: flyForwards 1000ms forwards;
       }
       &.flyBackwards {
         transform: rotate(0);
-        transition: 500ms;
+        transition: 1000ms;
         opacity: 1;
-        animation: flyBackwards 500ms forwards;
+        animation: flyBackwards 1000ms forwards;
       }
     }
     ol {

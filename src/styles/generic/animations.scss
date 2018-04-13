@@ -1,22 +1,22 @@
 @keyframes flyForwards {
   0% {
-    transform: translatex(0) rotate(-90deg);
+    transform: translatex(0) rotate(-90deg) translateZ(0);
   }
   50% {
-    transform: translatex(-2rem) rotate(-180deg);
+    transform: translatex(-2rem) rotate(-180deg) translateZ(0);
   }
   100% {
-    transform: translatex(0) rotate(-270deg);
+    transform: translatex(0) rotate(-270deg) translateZ(0);
   }
 }
 @keyframes flyBackwards {
   0% {
-    transform: translatex(0) rotate(270deg);
+    transform: translatex(0) rotate(270deg) translateZ(0);
   }
   50% {
-    transform: translatex(-2rem) rotate(180deg);
+    transform: translatex(-2rem) rotate(180deg) translateZ(0);
   }
   100% {
-    transform: translatex(0) rotate(270deg);
+    transform: translatex(0) rotate(270deg) translateZ(0);
   }
 }
