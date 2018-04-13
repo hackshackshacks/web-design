@@ -21,6 +21,23 @@
       padding-left: 2.5rem;
       line-height: 1.1;
     }
+    .plane {
+      position: absolute;
+      height: 20px;
+      opacity: 0;
+      &.flyForwards {
+        transform: rotate(180deg);
+        transition: 500ms;
+        opacity: 1;
+        animation: flyForwards 500ms forwards;
+      }
+      &.flyBackwards {
+        transform: rotate(0);
+        transition: 500ms;
+        opacity: 1;
+        animation: flyBackwards 500ms forwards;
+      }
+    }
     ol {
       padding: 2rem 1rem;
       position: relative;
@@ -171,9 +188,15 @@
           padding-left: 0;
           color: $brand-secondary;
           text-transform: lowercase;
+          img {
+            height: 0.8rem;
+          }
         }
         &.addPerson {
           display: block;
+        }
+        &.remove {
+          padding: 0;
         }
       }
     }

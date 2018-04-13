@@ -6,7 +6,8 @@ const app = {
     listItems: document.querySelectorAll('ol li'),
     addPerson: document.querySelector('.addPerson'),
     passengers: document.querySelector('.passengers'),
-    lastPassenger: document.querySelector('.passenger:last-of-type')
+    lastPassenger: document.querySelector('.passenger:last-of-type'),
+    plane: document.querySelector('.plane')
   },
   init: function () {
     this.currentStep = 0
@@ -17,12 +18,14 @@ const app = {
       button.addEventListener('click', function (e) {
         app.currentStep++
         app.updateStep(app.currentStep)
+        app.movePlane(app.elements.listItems[app.currentStep], 'forwards')
       })
     })
     this.elements.prevButtons.forEach((button) => {
       button.addEventListener('click', function (e) {
         app.currentStep--
         app.updateStep(app.currentStep)
+        app.movePlane(app.elements.listItems[app.currentStep], 'backwards')
       })
     })
     this.elements.addPerson.addEventListener('click', () => {
@@ -48,7 +51,7 @@ const app = {
     })
   },
   addPassenger: function () {
-    this.elements.lastPassenger.insertAdjacentHTML('afterend', '<div class="inputGroup passenger"><div class="inputWrap"><label for="form_departure">Voornaam</label><input type="text" id="form_departure_time"></div><div class="inputWrap"><label for="form_arrival">Achternaam</label><input type="text" id="form_arrival_time"></div><button type="button">x</button></div>')
+    this.elements.lastPassenger.insertAdjacentHTML('afterend', '<div class="inputGroup passenger"><div class="inputWrap"><label for="form_departure">Voornaam</label><input type="text" id="form_departure_time"></div><div class="inputWrap"><label for="form_arrival">Achternaam</label><input type="text" id="form_arrival_time"></div><button type="button" class="remove"><img src="images/close.png" alt="delete passenger"></button></div>')
     this.elements.lastPassenger = document.querySelector('.passenger:last-of-type')
     this.elements.lastPassenger.querySelector('button').addEventListener('click', () => {
       this.removePassenger(this.elements.lastPassenger)
@@ -57,6 +60,23 @@ const app = {
   removePassenger: function (button) {
     this.elements.passengers.removeChild(button)
     this.elements.lastPassenger = document.querySelector('.passenger:last-of-type')
+  },
+  movePlane: function (activeEl, direction) {
+    console.log(activeEl, activeEl.getBoundingClientRect().top)
+    this.elements.plane.style.left = activeEl.getBoundingClientRect().left - 28 + 'px'
+    this.elements.plane.style.top = activeEl.getBoundingClientRect().top + 'px'
+    if (direction === 'forwards') {
+      this.elements.plane.classList.add('flyForwards')
+      setTimeout(() => {
+        this.elements.plane.classList.remove('flyForwards')
+      }, 500)
+    } else if (direction === 'backwards') {
+      this.elements.plane.classList.add('flyBackwards')
+      setTimeout(() => {
+        this.elements.plane.classList.remove('flyBackwards')
+      }, 500)
+    }
+
   }
 }
 app.init()

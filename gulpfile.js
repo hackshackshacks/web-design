@@ -104,5 +104,5 @@ gulp.task('open', () => {
 
 // Combined tasks
 gulp.task('default', ['render', 'sass', 'bundle', 'images', 'fonts', 'connect', 'watch'])
-gulp.task('start', gulpSequence(['render', 'sass', 'bundle', 'images', 'fonts', 'connect', 'watch'], 'open'))
+gulp.task('start', gulpSequence(['render', 'sass', 'bundle', 'fonts', 'connect', 'watch'], 'open', 'images'))
 gulp.task('prod', gulpSequence('clean', ['render', 'sass-p', 'bundle-p', 'images', 'fonts', 'connect']))
