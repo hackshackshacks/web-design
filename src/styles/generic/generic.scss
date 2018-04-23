@@ -1,12 +1,5 @@
 body {
-  font-family: Roboto;
-}
-:focus {
-  outline: 0;
-  // &:before {
-  //   content: '';
-
-  // }
+  font-family: $font-base;
 }
 section {
   width: 95%;
@@ -18,9 +11,44 @@ h1 {
   line-height: 7rem;
 }
 h2 {
-  font-size: 3.75em;
+  font-size: 3em;
+}
+h3 {
+  font-size: 1.87em;
+}
+p {
+  font-size: 1em;
+  color: $color-text;
 }
 a {
   color: inherit;
-  text-decoration: none;
+  transition: 300ms;
+  position: relative;
+  &:before, &:after {
+    position: absolute;
+    top: -65%;
+    font-size: 240%;
+    font-family: $font-second;
+    color: $color-brand;
+    opacity: 0;
+    transition: 300ms;
+  }
+  &:before {
+    content: '{';
+    left: -18%;
+    transform: translatex(-5px);
+  }
+  &:after {
+    content: '}';
+    right: -18%;
+    transform: translatex(5px);
+  }
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+    &:before, &:after {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
 }

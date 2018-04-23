@@ -16,30 +16,7 @@
         padding: 0.5rem 1rem;
         border-radius: 2px;
         position: relative;
-
-        &:focus-within {
-          background: rgba($color-brand, 0.2);
-          a {
-            &::after {
-              opacity: 0;
-            }
-          }
-          ul {
-            opacity: 1;
-          }
-        }
-        a {
-          position: relative;
-          &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background: $color-brand;
-          }
-        }
+        
         img {
           height: 2rem;
           display: inline-block;
