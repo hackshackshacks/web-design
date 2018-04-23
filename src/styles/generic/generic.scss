@@ -1,0 +1,26 @@
+body {
+  font-family: Roboto;
+}
+:focus {
+  outline: 0;
+  // &:before {
+  //   content: '';
+
+  // }
+}
+section {
+  width: 95%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 7.5em;
+  line-height: 7rem;
+}
+h2 {
+  font-size: 3.75em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
