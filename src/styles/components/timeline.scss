@@ -1,0 +1,56 @@
+.timeline {
+  progress {
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+    -webkit-appearance: none;
+    height: 3px;
+    transform: translatey(1.6rem);
+  }
+  ::-webkit-progress-bar {
+    background-color: $color-faded;
+  }
+  ::-webkit-progress-value {
+    background-color: $color-secondary;
+  }
+  ol {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    li {
+      display: grid;
+      grid-template-rows: 50px 1fr;
+      align-items: center;
+      position: relative;
+      &:first-child, &:last-child  {
+        div {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+      div {
+        background: $color-secondary;
+        border-radius: 100px;
+        height: 2.1rem;
+        width: 2.1rem;
+        display: grid;
+        justify-self: center;
+        place-items: center;
+        font-weight: 700;
+        &.failed {
+          background: $color-tertiary;
+        }
+        &.active {
+          background: $color-brand;
+        }
+        &.waiting {
+          background: $color-faded;
+        }
+      }
+      span {
+        margin-top: 0.7rem;
+        align-self: end;
+      }
+    }
+  }
+}
