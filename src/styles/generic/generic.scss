@@ -46,6 +46,7 @@ a {
   &:focus {
     outline: 0;
     text-decoration: none;
+    color: $color-brand;
     &:before, &:after {
       opacity: 1;
       transform: translatex(0);

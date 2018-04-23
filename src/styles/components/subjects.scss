@@ -37,7 +37,6 @@
         }
         &:focus-within {
           background: $color-brand;
-          color: white;
           opacity: 1;
         }
         a {
@@ -46,6 +45,7 @@
           display: grid;
           place-items: center;
           &:focus {
+            color: white;
             &::after, &::before {
               display: none;
             }
