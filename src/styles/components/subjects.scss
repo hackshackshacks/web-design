@@ -1,0 +1,39 @@
+.subjects {
+  margin-top: 5.8125rem;
+  main {
+    margin-top: 3.5rem;
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 13.375rem;
+      grid-gap: 1rem;
+      li {
+        background: $color-faded;
+        text-align: center;
+        font-size: 2.5rem;
+        opacity: 0.6;
+        display: grid;
+        place-items: center;
+        &.full {
+          grid-column: span 2;
+        }
+        &.active {
+          border: 11px solid $color-brand;
+          opacity: 1;
+          background: white;
+        }
+        &.finished {
+          background: $color-secondary;
+        }
+        &.unfinished {
+          background: $color-tertiary;
+        }
+        &:focus-within {
+          background: $color-brand;
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
