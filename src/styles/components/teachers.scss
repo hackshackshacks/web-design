@@ -1,0 +1,31 @@
+.teachers {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 1.7rem;
+    article {
+      figure {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-rows: 350px auto;
+        img {
+          height: 100%;
+          width: 100%;
+          transition: 300ms;
+          filter: grayscale(1);
+        }
+        figcaption {
+          a {
+            margin-left: 2rem;
+          }
+        }
+      }
+      &:focus-within {
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
