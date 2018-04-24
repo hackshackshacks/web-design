@@ -7,6 +7,9 @@
   grid-gap: 1rem;
   main {
     grid-area: main;
+    a {
+      transform: translateX(-1.4rem);
+    }
   }
   nav {
     grid-area: nav;
@@ -16,14 +19,14 @@
     >ol {
       border: 3px solid $color-faded;
       box-shadow: -5px 5px 0 0 $color-faded;
-      padding: 3.625rem 3.1875rem;
+      padding: 2rem 1.7rem;
       &:focus-within {
         border-color: $color-brand;
         box-shadow: -5px 5px 0 0 $color-brand;
       }
       >li {
         margin-top: 2.3125rem;
-        font-size: 1.625em;
+        font-size: 1.5em;
         &:first-child {
           margin-top: 0;
         }

@@ -23,10 +23,11 @@ p {
 a {
   color: inherit;
   transition: 300ms;
-  position: relative;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  place-items: center;
   &:before, &:after {
-    position: absolute;
-    top: -65%;
     font-size: 240%;
     font-family: $font-second;
     color: $color-brand;
@@ -35,12 +36,10 @@ a {
   }
   &:before {
     content: '{';
-    left: -18%;
     transform: translatex(-5px);
   }
   &:after {
     content: '}';
-    right: -18%;
     transform: translatex(5px);
   }
   &:focus {
