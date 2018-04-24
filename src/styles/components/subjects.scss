@@ -15,7 +15,7 @@
       grid-auto-rows: 9rem;
       grid-gap: 1rem;
       li {
-        background: $color-faded;
+        border: 3px solid $color-faded;
         text-align: center;
         font-size: 1.5625rem;
         font-weight: 700;
@@ -25,18 +25,19 @@
           grid-column: span 2;
         }
         &.active {
-          border: 11px solid $color-brand;
+          border-color: $color-brand;
           opacity: 1;
           background: white;
         }
         &.finished {
-          background: $color-secondary;
+          border-color: $color-secondary;
         }
         &.unfinished {
-          background: $color-tertiary;
+          border-color: $color-tertiary;
         }
         &:focus-within {
           background: $color-brand;
+          border-color: $color-brand;
           opacity: 1;
         }
         a {
@@ -62,11 +63,11 @@
       grid-gap: 1rem;
       li {
         padding: 1.5rem;
-        border: 2px solid $color-faded;
+        border: 3px solid $color-faded;
         box-shadow: -5px 5px 0 0 $color-faded;
         transition: 300ms;
         &:focus-within {
-          border: 2px solid $color-brand;
+          border: 3px solid $color-brand;
           box-shadow: -5px 5px 0 0 $color-brand;
         }
         div {
