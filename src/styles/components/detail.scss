@@ -90,6 +90,11 @@
         }
       }
     }
+    .noslots {
+      background: rgba($color-brand, 0.1);
+      padding: 4rem;
+      text-align: center;
+    }
     form {
       legend {
         color: $color-brand;
@@ -162,6 +167,9 @@
             }
           }
         }
+      }
+      .newUser {
+        animation: pop 300ms forwards;
       }
       input {
         position: absolute;
