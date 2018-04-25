@@ -1,0 +1,20 @@
+.weeklynerd {
+  main {
+    h3 {
+      color: $color-text;
+      margin-top: 1rem;
+    }
+    .day {
+      border: 1px solid $color-brand;
+    }
+  }
+  article {
+    margin-top: 3rem;
+    border: 3px solid #EDEDED;
+    padding: 2rem;
+  }
+  video {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+}

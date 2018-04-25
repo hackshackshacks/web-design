@@ -42,7 +42,7 @@ a {
     content: '}';
     transform: translatex(5px);
   }
-  &:focus {
+  &:focus, &:hover {
     outline: 0;
     text-decoration: none;
     color: $color-brand;
