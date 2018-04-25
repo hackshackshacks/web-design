@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto:400,500,700,900" rel="stylesheet">
+  <title>Meesterproef</title>
+</head>
+<body data-active="1">
+
+<section class="header">
+  <h1>Web Development</h1>
+  <nav>
+    <ul>
+      <li >
+        <a href="index.html">Home</a>
+      </li>
+      <li >
+        <a href="weeklynerd.html">Weekly nerd</a>
+      </li>
+      <li>
+        <img src="images/profile.jpg" alt="Profile picture">Koos Bavinck
+      </li>
+    </ul>
+  </nav>
+</section>
+<section class="detail">
+  <nav id="fixedNav">
+    <ol>
+      <li>
+        <a href="#vakbeschrijving">Vakbeschrijving</a>
+      </li>
+      <li>
+        <a href="#week1">Opdrachten</a>
+        <ol>
+          <li class="active">
+            <a href="#week1">Week 1</a>
+          </li>
+          <li>
+            <a href="#week2">Week 2</a>
+          </li>
+          <li>
+            <a href="#week3">Week 3</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
+  <main>
+    <h2 id="vakbeschrijving">Meesterproef</h2>
+    <h3>Intentie</h3>
+    <p>In dit vak gaan we rapid prototypen en testen met echte gebruikers. Is er goede interactie? Zijn er goede design patterns
+      gekozen? Zijn de basis regels van user interface design goed toegepast? Is er een focus op de core functionaliteit?</p>
+    <h3>Leerdoelen</h3>
+    <ul class="arrowList">
+      <li>Interface design principles snappen en toepassen</li>
+      <li>Leren hoe je moet (Usability) testen en de resultaten gebruiken voor het verbeteren van je ontwerp</li>
+      <li>User needs begrijpen en gebruiken in je ontwerp</li>
+    </ul>
+    <h2 id="week1">Week 1</h2>
+    <div class="day inactive">
+      <h4>Maandag</h4>
+      <ol>
+        <li>Introductie en werkwijze</li>
+        <li>Principles of User Interface Design behandelen</li>
+        <li>Briefing opdracht 1:
+          <a href="#">Verschillende versies van een Use Case testen en demonstreren</a>
+        </li>
+      </ol>
+    </div>
+    <div class="day">
+      <h4 class="active">Woensdag</h4>
+      <ol>
+        <li>Meer Interface principles bespreken en opdracht 1 bespreken en doorwerken</li>
+      </ol>
+      <h5>Voorbereiding</h5>
+      <ol>
+        <li>Lezen:
+          <a href="#">Principles of User Interface Design van Joshua Porter</a>
+        </li>
+        <li>Lezen:
+          <a href="#">Design Principles: Dominance, Focal Points and Hierarchy van Steven Bradley</a>
+        </li>
+      </ol>
+    </div>
+    <div class="day">
+      <h4>Vrijdag</h4>
+      <h5 class="important">Deadline</h5>
+      <p>Beoordeling opdracht 1</p>
+      <form id="slot1">
+        <legend>Schrijf je in</legend>
+        <div class="inputWrap">
+          <div>
+            <input type="radio" id="geenslot" name="timeslot" checked>
+            <label for="geenslot">
+              <span>Geen timeslot</span>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users">
+              <div class="user">
+                <img src="images/users/1.jpg">
+                <div class="hidden">
+                  <img src="images/users/1.jpg"> Hans van Vliet</div>
+              </div>
+            </div>
+            <input type="radio" id="slot1" name="timeslot">
+            <label for="slot1">
+              <time>09:30-10:00</time>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users">
+              <div class="user">
+                <img src="images/users/2.png">
+                <div class="hidden">
+                  <img src="images/users/2.png"> Merel de Vries</div>
+              </div>
+              <div class="user">
+                <img src="images/users/11.jpg">
+                <div class="hidden">
+                  <img src="images/users/11.jpg"> Bas Groene</div>
+              </div>
+              <div class="user">
+                <img src="images/users/3.jpg">
+                <div class="hidden">
+                  <img src="images/users/3.jpg"> Janna Moerman</div>
+              </div>
+            </div>
+            <input type="radio" id="slot2" name="timeslot" disabled>
+            <label for="slot2">
+              <time>10:00-10:30</time>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users">
+              <div class="user">
+                <img src="images/users/10.jpg">
+                <div class="hidden">
+                  <img src="images/users/10.jpg"> Berend Maas</div>
+              </div>
+            </div>
+            <input type="radio" id="slot3" name="timeslot">
+            <label for="slot3">
+              <time>10:30-11:00</time>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users"></div>
+            <input type="radio" id="slot4" name="timeslot">
+            <label for="slot4">
+              <time>11:00-11:30</time>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users"></div>
+            <input type="radio" id="slot5" name="timeslot">
+            <label for="slot5">
+              <time>11:30-12:00</time>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users"></div>
+            <input type="radio" id="slot6" name="timeslot">
+            <label for="slot6">
+              <time>12:00-12:30</time>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users"></div>
+            <input type="radio" id="slot7" name="timeslot">
+            <label for="slot7">
+              <time>12:30-13:00</time>
+            </label>
+          </div>
+          <div class="radio">
+            <div class="users">
+              <div class="user">
+                <img src="images/users/4.jpg">
+                <div class="hidden">
+                  <img src="images/users/4.jpg"> Isa de Groot</div>
+              </div>
+            </div>
+            <input type="radio" id="slot8" name="timeslot">
+            <label for="slot8">
+              <time>13:00-13:30</time>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <h2 id="week2">Week 2</h2>
+    <div class="day">
+      <h4>Maandag</h4>
+      <ol>
+        <li>Introductie en werkwijze</li>
+        <li>Principles of User Interface Design behandelen</li>
+        <li>Briefing opdracht 1:
+          <a href="#">Verschillende versies van een Use Case testen en demonstreren</a>
+        </li>
+      </ol>
+    </div>
+    <div class="day">
+      <h4>Woensdag</h4>
+      <ol>
+        <li>Meer Interface principles bespreken en opdracht 1 bespreken en doorwerken</li>
+      </ol>
+      <h5>Voorbereiding</h5>
+      <ol>
+        <li>Lezen:
+          <a href="#">Principles of User Interface Design van Joshua Porter</a>
+        </li>
+        <li>Lezen:
+          <a href="#">Design Principles: Dominance, Focal Points and Hierarchy van Steven Bradley</a>
+        </li>
+      </ol>
+    </div>
+    <div class="day">
+      <h4>Vrijdag</h4>
+      <h5 class="important">Deadline</h5>
+      <p>Beoordeling opdracht 2</p>
+      <div class="noslots">
+        Deze timeslots zijn nog niet beschikbaar
+      </div>
+    </div>
+    <h2 id="week3">Week 3</h2>
+    <div class="day">
+      <h4>Maandag</h4>
+      <ol>
+        <li>Introductie en werkwijze</li>
+        <li>Principles of User Interface Design behandelen</li>
+        <li>Briefing opdracht 1:
+          <a href="#">Verschillende versies van een Use Case testen en demonstreren</a>
+        </li>
+      </ol>
+    </div>
+    <div class="day">
+      <h4>Woensdag</h4>
+      <ol>
+        <li>Meer Interface principles bespreken en opdracht 1 bespreken en doorwerken</li>
+      </ol>
+      <h5>Voorbereiding</h5>
+      <ol>
+        <li>Lezen:
+          <a href="#">Principles of User Interface Design van Joshua Porter</a>
+        </li>
+        <li>Lezen:
+          <a href="#">Design Principles: Dominance, Focal Points and Hierarchy van Steven Bradley</a>
+        </li>
+      </ol>
+    </div>
+    <div class="day">
+      <h4>Vrijdag</h4>
+      <h5 class="important">Deadline</h5>
+      <p>Beoordeling opdracht 3</p>
+      <div class="noslots">
+        Deze timeslots zijn nog niet beschikbaar
+      </div>
+    </div>
+  </main>
+</section>
+ 
+<script src='js/bundle.js'></script>
+</body>
+</html>
