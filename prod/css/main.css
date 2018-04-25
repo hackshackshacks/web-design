@@ -224,11 +224,10 @@ a {
       display: grid;
       grid-gap: 1rem; }
       .subjects aside ul li {
-        padding: 1.5rem;
         border: 3px solid #EDEDED;
         box-shadow: -5px 5px 0 0 #EDEDED;
         transition: 300ms; }
-        .subjects aside ul li:focus-within {
+        .subjects aside ul li:focus-within, .subjects aside ul li:hover {
           border: 3px solid #481EF7;
           box-shadow: -5px 5px 0 0 #481EF7; }
         .subjects aside ul li div {
@@ -240,8 +239,12 @@ a {
           overflow: hidden;
           text-overflow: ellipsis; }
         .subjects aside ul li a {
-          color: #481EF7; }
-          .subjects aside ul li a::after, .subjects aside ul li a::before {
+          height: 100%;
+          width: 100%;
+          padding: 1.5rem;
+          display: block;
+          text-decoration: none; }
+          .subjects aside ul li a::before, .subjects aside ul li a::after {
             display: none; }
 
 .teachers main {
