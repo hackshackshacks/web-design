@@ -4,5 +4,8 @@ $color-tertiary: #E87D0C;
 $color-faded: #EDEDED;
 $color-text: #5C5C5C;
 
+$fadeTimer: 300ms;
+$fadeDelay: $fadeTimer * 0.4;
+
 $font-base: 'Roboto', sans-serif;
 $font-second: 'Raleway', sans-serif;

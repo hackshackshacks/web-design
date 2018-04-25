@@ -1,4 +1,6 @@
 .timeline {
+  animation: fadeIn $fadeTimer forwards ease-in-out;
+  opacity: 0;
   progress {
     width: 96%;
     display: block;

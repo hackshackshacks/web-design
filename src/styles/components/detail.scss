@@ -6,6 +6,8 @@
   "main main main main main main main main clear nav nav nav";
   grid-gap: 1rem;
   main {
+    animation: fadeIn 300ms forwards ease-in-out;
+    opacity: 0;
     grid-area: main;
     position: relative;
     >a {
@@ -194,6 +196,9 @@
     }
   }
   nav {
+    animation: fadeIn $fadeTimer forwards ease-in-out;
+    opacity: 0;
+    animation-delay: $fadeDelay;
     grid-area: nav;
     position: sticky;
     top: 10px;
