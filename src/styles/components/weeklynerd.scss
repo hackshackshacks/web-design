@@ -16,5 +16,29 @@
   video {
     margin-top: 2rem;
     max-width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  .videoWrap {
+    position: relative;
+    &::before {
+      content: '{';
+      position: absolute;
+      left: -8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100%;
+      font-size: 370px;
+      font-family: $font-second;
+      color: $color-brand;
+      opacity: 0;
+      transition: 300ms;
+    }
+    &:focus-within {
+      &::before {
+        opacity: 1;
+      }
+    }
   }
 }
