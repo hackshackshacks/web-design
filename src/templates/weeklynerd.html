@@ -1,0 +1,12 @@
+<!-- Variables -->
+{% set title = 'Weekly nerd' %}
+{% set active = 'weeklynerd' %}
+
+<!-- Include base -->
+{% extends "components/base.html" %}
+
+<!-- Include components into block -->
+{% block content %}
+{% include "components/header.html" %}
+{% include "components/weeklynerd.html" %}
+{% endblock %} 
