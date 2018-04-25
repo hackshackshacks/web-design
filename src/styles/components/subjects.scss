@@ -68,11 +68,10 @@
       display: grid;
       grid-gap: 1rem;
       li {
-        padding: 1.5rem;
         border: 3px solid $color-faded;
         box-shadow: -5px 5px 0 0 $color-faded;
         transition: 300ms;
-        &:focus-within {
+        &:focus-within, &:hover {
           border: 3px solid $color-brand;
           box-shadow: -5px 5px 0 0 $color-brand;
         }
@@ -87,8 +86,12 @@
           text-overflow: ellipsis;
         }
         a {
-          color: $color-brand;
-          &::after, &::before {
+          height: 100%;
+          width: 100%;
+          padding: 1.5rem;
+          display: block;
+          text-decoration: none;
+          &::before, &::after {
             display: none;
           }
         }
