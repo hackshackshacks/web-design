@@ -2,11 +2,11 @@
   <h1>Web Development</h1>
   <nav>
     <ul>
-      <li>
-        <a href="#">Algemene informatie</a>
+      <li {% if active === 'home' %} class= 'active' {% endif %}>
+        <a href="index.html">Home</a>
       </li>
-      <li>
-        <a href="#">Administratie</a>
+      <li {% if active === 'weeklynerd' %} class= 'active' {% endif %}>
+        <a href="weeklynerd.html">Weekly nerd</a>
       </li>
       <li>
         <img src="images/profile.jpg" alt="Profile picture">Koos Bavinck

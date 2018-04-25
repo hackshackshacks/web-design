@@ -6,7 +6,6 @@
     ul {
       display: grid;
       grid-auto-flow: column;
-      grid-gap: 3rem;
       justify-content: end;
       li {
         display: grid;
@@ -23,6 +22,12 @@
           vertical-align: middle;
           margin-right: 0.5rem;
           border-radius: 100px;
+        }
+        &.active {
+          color: $color-brand;
+          a {
+            text-decoration: none;
+          }
         }
       }
     }

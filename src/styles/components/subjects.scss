@@ -35,22 +35,22 @@
         &.unfinished {
           border-color: $color-tertiary;
         }
-        &:focus-within {
+        &:focus-within, &:hover {
           background: $color-brand;
           border-color: $color-brand;
           opacity: 1;
+          a {
+            color: white;
+            &::after, &::before {
+              display: none;
+            }
+          }
         }
         a {
           width: 100%;
           height: 100%;
           display: grid;
           place-items: center;
-          &:focus {
-            color: white;
-            &::after, &::before {
-              display: none;
-            }
-          }
         }
       }
     }
@@ -82,10 +82,8 @@
         }
         a {
           color: $color-brand;
-          &:focus {
-            &::after, &::before {
-              display: none;
-            }
+          &::after, &::before {
+            display: none;
           }
         }
       }

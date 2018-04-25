@@ -16,12 +16,12 @@
           filter: grayscale(1);
         }
         figcaption {
-          a {
-            margin-left: 2rem;
-          }
+          display: grid;
+          grid-auto-flow: column;
+          align-items: center;
         }
       }
-      &:focus-within {
+      &:focus-within, &:hover {
         img {
           filter: grayscale(0);
         }
