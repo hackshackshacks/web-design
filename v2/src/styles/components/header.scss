@@ -1,0 +1,67 @@
+body > header {
+  background: #fff;
+  .content {
+    max-width: $wrap;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    padding: 1.2rem 0;
+  }
+  nav {
+    ul {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 2.625rem;
+    }
+    li {
+      font-size: 1.25em;
+      height: 100%;
+      position: relative;
+      color: rgba($base-color-dark, 0.5);
+      transition: 300ms;
+      &.active {
+        font-weight: bold;
+        color: rgba($base-color-dark, 1);
+        &:after {
+          background: rgba($brand-color-1, 1);
+        }
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        background: rgba($brand-color-1, 0);
+        height: 4px;
+        width: 100%;
+        transition: 300ms;
+      }
+      &:hover {
+        color: rgba($base-color-dark, 1);
+        &:after {
+          background: rgba($brand-color-1, 0.5);
+        }
+      }
+      &.profile {
+        &::after {
+          display: none;
+        }
+      }
+      a {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+        color: inherit;
+      }
+      img {
+        max-height: 2.8125rem;
+        border-radius: 100px;
+      }
+    }
+  }
+}
