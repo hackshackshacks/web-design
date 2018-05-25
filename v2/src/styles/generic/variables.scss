@@ -3,7 +3,14 @@ $wrap: 65.625rem;
 $font-base: 'Hind';
 $brand-color-1: #481ef7;
 $base-color-dark: #151515;
+$brand-green: #3dbf00;
+$base-color-light: #f0f0f0;
 
 $background-light: #f3f2f5;
 
 $border-radius: 5px;
+
+:root {
+  --timeslotNavLeft: 0px;
+  --timeslotNavWidth: 0px;
+}

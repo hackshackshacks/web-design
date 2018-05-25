@@ -1,0 +1,200 @@
+.mainBlock {
+  max-width: $wrap;
+  margin: 4.6875rem auto;
+  display: flex;
+  align-items: flex-start;
+
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-weight: normal;
+  }
+  aside {
+    width: 33%;
+    background: #fff;
+    padding: 1rem 1.875rem;
+    margin-right: 1rem;
+    a {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      grid-gap: 0.875rem;
+      opacity: 0.38;
+      text-decoration: none;
+      color: $base-color-dark;
+      padding: 1rem 0;
+      transition: 300ms;
+      &:hover {
+        opacity: 1;
+        color: $brand-color-1;
+        svg {
+          fill: $brand-color-1;
+          margin-right: 0.3rem;
+        }
+      }
+    }
+    svg {
+      height: 2.1875rem;
+      transition: 300ms;
+    }
+  }
+  .last {
+    border-bottom: 1px solid rgba($base-color-dark, 0.14);
+  }
+  .doing {
+    a {
+      opacity: 1;
+    }
+  }
+  .active {
+    a {
+      opacity: 1;
+      color: $brand-color-1;
+      svg {
+        fill: $brand-color-1;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+  main {
+    background: #fff;
+    padding: 1rem 1.875rem;
+    width: 66%;
+    header {
+      display: flex;
+      align-items: center;
+    }
+    h2 {
+      font-size: 3.125rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 3rem;
+    }
+    .done {
+      display: flex;
+      align-items: center;
+      background: $brand-green;
+      border-radius: 100px;
+      padding: 0.25rem 1.25rem;
+      color: #fff;
+      font-weight: 500;
+      svg {
+        height: 1rem;
+        margin-right: 0.625rem;
+      }
+    }
+    nav {
+      margin-top: 1rem;
+      ul {
+        display: flex;
+      }
+      li {
+        margin-right: 1rem;
+        background: $base-color-light;
+        border-radius: $border-radius;
+        font-size: 1.25em;
+      }
+      .active {
+        background: $brand-color-1;
+        a {
+          color: #fff;
+        }
+      }
+      a {
+        display: block;
+        padding: 0.2875rem 1rem;
+      }
+    }
+    .information {
+      margin-top: 1.8125rem;
+      padding: 0 1.25rem;
+      h3 {
+        font-size: 1.25em;
+        font-weight: 500;
+        margin-top: 2rem;
+      }
+      p,
+      li {
+        font-weight: 300;
+      }
+      li {
+        margin-bottom: 1rem;
+      }
+      ol {
+        padding: 0 0 0 1rem;
+      }
+      details {
+        background: $base-color-light;
+        border-radius: $border-radius;
+        display: inline-block;
+        min-width: 0;
+        transition: 300ms;
+        summary {
+          user-select: none;
+          font-weight: 500;
+          padding: 1rem;
+          &:focus {
+            outline: none;
+          }
+        }
+        .details {
+          padding: 0 1rem 1rem 1rem;
+        }
+        &[open] {
+          min-width: 100%;
+          p,
+          div {
+            animation: sweep 300ms forwards;
+            animation-delay: 200ms;
+          }
+        }
+        p {
+          display: block;
+          opacity: 0;
+          transform: translatex(-10px);
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 400;
+        }
+        .button {
+          opacity: 0;
+          transform: translatex(-10px);
+          display: flex;
+          align-items: center;
+          padding-top: 1rem;
+          button {
+            margin-right: 1rem;
+          }
+          span {
+            color: $brand-color-1;
+            opacity: 1;
+            transition: 300ms;
+            &.hidden {
+              opacity: 0;
+              transition: 300ms;
+            }
+          }
+        }
+      }
+      a {
+        color: $brand-color-1;
+        text-decoration: underline;
+        &:before {
+          $size: 0.625rem;
+          content: '';
+          height: $size;
+          width: $size;
+          display: inline-block;
+          vertical-align: middle;
+          background: url('../images/icons/export.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin-right: 0.1875rem;
+        }
+      }
+    }
+  }
+}

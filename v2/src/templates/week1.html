@@ -1,0 +1,8 @@
+<!-- Variables -->
+{% set title = 'Example' %}{% set nav = 1 %}
+
+<!-- Include base -->
+{% extends "components/base.html" %} {% block content %}
+<!-- Include components into block -->
+{% include "components/header.html" %} {% include "components/week1.html" %}{% include "components/timeslots.html" %} {%
+endblock %}
