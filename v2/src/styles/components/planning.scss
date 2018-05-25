@@ -1,0 +1,105 @@
+.planning {
+  .appointment {
+    h3 {
+      font-size: 1.25em;
+      font-weight: 700;
+      color: $base-color-dark;
+    }
+    time,
+    p {
+      display: block;
+      font-size: 0.875em;
+      margin: 0;
+      margin-top: -5px;
+    }
+    p {
+      color: $base-color-dark;
+    }
+  }
+  main {
+    .information {
+      ol {
+        list-style: none;
+        padding: 0 2rem;
+        li {
+          margin: 1.25em 0;
+          font-size: 1.25em;
+          display: grid;
+          grid-auto-flow: column;
+          &:hover {
+            img {
+              opacity: 1;
+              pointer-events: unset;
+            }
+          }
+        }
+      }
+    }
+    img {
+      vertical-align: middle;
+      justify-self: end;
+      opacity: 0;
+      pointer-events: none;
+      transition: 300ms;
+    }
+    label {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        border-radius: $border-radius;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 2px solid $brand-color-1;
+        top: 50%;
+        transform: translatey(-50%);
+        left: -2rem;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        left: -1.75rem;
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+    input[type='checkbox'] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      &:checked + label {
+        opacity: 0.38;
+        text-decoration: line-through;
+        &::before {
+          opacity: 0.7;
+        }
+        &::after {
+          background: url('../images/icons/check2@2x.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+  form {
+    border: 1px solid rgba($base-color-dark, 0.19);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 0.625rem 0.625rem 0.625rem 1rem;
+    input {
+      border: none;
+      font-size: 1.25em;
+      font-family: $font-base;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+  }
+}
