@@ -143,7 +143,7 @@ The user wants to know how well he is doing in the minor Web Development. He is 
 
 The user can see what the status of each course is. The three state 'done' 'doing' and 'coming' describe what the users status is.
 
-![scenario1]()
+![scenario1](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen1.png?raw=true)
 
 ### Scenario 2
 
@@ -155,7 +155,7 @@ The user doesn’t know what is expected of him. He wants to figure out what he 
 
 The user navigates to the student website and opens the course page. This page contains information about the course and the expectations.
 
-![scenario2]()
+![scenario2](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen2.png?raw=true)
 
 ### Scenario 3
 
@@ -167,7 +167,7 @@ The user is looking for extra resources to learn more about a certain subject. H
 
 The course page provides space for the teachers to link to external articles for each subject. Possibly for each week.
 
-![scenario3]()
+![scenario3](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen3.png?raw=true)
 
 ### Scenario 4
 
@@ -201,7 +201,7 @@ The user wants to subscribe to a timeslot when those are available.
 
 Using a pop up modal the user can subscribe to timeslots
 
-[scenario6]()
+[scenario6](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen6.png?raw=true)
 
 ### Scenario 7
 
@@ -213,24 +213,24 @@ The user wants to make a todolist on site. This way everything is in the same pl
 
 Using the planning page the user can create a custom todolist.
 
-[scenario7]()
+[scenario7](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen7.png?raw=true)
 
 ## Principles
 
 ### Hierarchy
 
 I created a strong visual hierarchy using colors and font sizes.
-![hierarchy]()
+![hierarchy](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/hierarchy.png?raw=true)
 
 ### Contrast
 
 I used contrasting colors to make everything easy to read. I also use these contrast to highlight what is important on the page.
-![contrast]()
+![contrast](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/contrast.png?raw=true)
 
 ### Smart organization reduces cognitive load
 
 I divided subjects in weeks to reduce the amount of information the user has to process.
-![organization]()
+![organization](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/organization.png?raw=true)
 
 ### Appearance follows behaviour || Consistency matters
 
@@ -241,29 +241,29 @@ When designing interactive elements such as links and buttons I tried to be cons
 ### Homepage
 
 The homepage shows a menu with all the courses and their statuses. In the detail view you can browse through the course per week.
-![home]()
+![home](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/home.png?raw=true)
 
 ### Weeks
 
 For each week the user can see what is expected of him/her. The week is divided in days with expandable assigments.
-![week1]()
+![week1](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/week1.png?raw=true)
 
 ### Timeslots
 
 The user can subscribe to timeslots for each teacher. The user can see which other students are in the same slot. Slots become disabled when they are full. See scenarios for an image of the presubscribe state. After subscribing it looks like this.
 
-![subscribed]()
+![subscribed](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/subscribed.png?raw=true)
 
 ### Weekly nerd
 
 The weekly nerd is similar to the home page but contains weekly nerd presentations instead of courses.
 
-![nerd]()
+![nerd](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/nerd.png?raw=true)
 
 ### Planning
 
 The planning page holds all the appointments by the user and an editable todolist. The todolist can be filled with a 'todo' button on the course pages.
-![planning]()
-![addTodo]()
+![planning](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/planning.png?raw=true)
+![addTodo](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/addTodo.png?raw=true)
 
 </details>
