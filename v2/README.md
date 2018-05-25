@@ -116,6 +116,8 @@ After getting feedback on V1 I decided to redesign the whole thing. V1 wasn't mu
 
 [View prototype](https://hackshackshacks.github.io/web-design/v2/show)
 
+![home](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/home.png?raw=true)
+
 ## Lessons
 
 After building V1 I learned the following lessons:
@@ -202,7 +204,7 @@ The user wants to subscribe to a timeslot when those are available.
 
 Using a pop up modal the user can subscribe to timeslots
 
-[scenario6](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen6.png?raw=true)
+![scenario6](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen6.png?raw=true)
 
 ### Scenario 7
 
@@ -214,7 +216,13 @@ The user wants to make a todolist on site. This way everything is in the same pl
 
 Using the planning page the user can create a custom todolist.
 
-[scenario7](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen7.png?raw=true)
+![scenario7](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/scen7.png?raw=true)
+
+## Card sorting
+
+I used cardsorting to think about the elements I needed to work into my design.
+
+![cardsort](https://github.com/hackshackshacks/web-design/blob/master/v2/readme_images/cardsort.jpg?raw=true)
 
 ## Principles
 
