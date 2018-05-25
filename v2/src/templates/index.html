@@ -1,7 +1,7 @@
 <!-- Variables -->
-{% set title = 'Example' %}
+{% set title = 'Example' %}{% set nav = 1 %}
 
 <!-- Include base -->
 {% extends "components/base.html" %} {% block content %}
 <!-- Include components into block -->
-{% include "components/header.html" %} {% endblock %}
+{% include "components/header.html" %} {% include "components/vakken.html" %} {% endblock %}
