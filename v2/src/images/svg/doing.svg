@@ -1,1 +1,54 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.31 138.19"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:6px;}.cls-2{fill:#dbc600;}.cls-3{fill:#fff;}</style></defs><title>doing</title><path d="M44,6V120H6V6H44m1-6H5A5,5,0,0,0,0,5V121a5,5,0,0,0,5,5H50V5a5,5,0,0,0-5-5Z"/><path d="M88,29.52V120H50V29.52H88m6-6H44V126H94V23.52Z"/><path d="M132,11.88V120H94V11.88h38m1-6H93a5,5,0,0,0-5,5V126h45a5,5,0,0,0,5-5V10.88a5,5,0,0,0-5-5Z"/><line class="cls-1" x1="14" y1="28" x2="36" y2="28"/><line class="cls-1" x1="14" y1="39" x2="36" y2="39"/><line class="cls-1" x1="58" y1="53" x2="80" y2="53"/><line class="cls-1" x1="58" y1="64" x2="80" y2="64"/><line class="cls-1" x1="102" y1="33" x2="124" y2="33"/><line class="cls-1" x1="102" y1="44" x2="124" y2="44"/><circle class="cls-2" cx="128.81" cy="109.69" r="26.5"/><path class="cls-3" d="M128.81,85.19a24.5,24.5,0,1,1-24.5,24.5,24.53,24.53,0,0,1,24.5-24.5m0-4a28.5,28.5,0,1,0,28.5,28.5,28.5,28.5,0,0,0-28.5-28.5Z"/><circle class="cls-3" cx="117.5" cy="109.5" r="3.5"/><circle class="cls-3" cx="128.5" cy="109.5" r="3.5"/><circle class="cls-3" cx="139.5" cy="109.5" r="3.5"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illudoingrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 157.3 138.2" doingyle="enable-background:new 0 0 157.3 138.2;" xml:space="preserve">
+<style type="text/css">
+	.doing0{fill:#DBC600;}
+	.doing1{fill:#FFFFFF;}
+</style>
+<title>doing</title>
+<g>
+	<path d="M44,6v114H6V6H44 M45,0H5C2.2,0,0,2.2,0,5v116c0,2.8,2.2,5,5,5h45V5C50,2.2,47.8,0,45,0z"/>
+</g>
+<g>
+	<path d="M88,29.5V120H50V29.5H88 M94,23.5H44V126h50V23.5z"/>
+</g>
+<g>
+	<path d="M132,11.9V120H94V11.9H132 M133,5.9H93c-2.8,0-5,2.2-5,5V126h45c2.8,0,5-2.2,5-5V10.9C138,8.1,135.8,5.9,133,5.9z"/>
+</g>
+<g>
+	<rect x="14" y="25" width="22" height="6"/>
+</g>
+<g>
+	<rect x="14" y="36" width="22" height="6"/>
+</g>
+<g>
+	<rect x="58" y="50" width="22" height="6"/>
+</g>
+<g>
+	<rect x="58" y="61" width="22" height="6"/>
+</g>
+<g>
+	<rect x="102" y="30" width="22" height="6"/>
+</g>
+<g>
+	<rect x="102" y="41" width="22" height="6"/>
+</g>
+<g>
+	<circle class="doing0" cx="128.8" cy="109.7" r="26.5"/>
+</g>
+<g>
+	<path class="doing1" d="M128.8,85.2c13.5,0,24.5,11,24.5,24.5s-11,24.5-24.5,24.5s-24.5-11-24.5-24.5
+		C104.3,96.2,115.3,85.2,128.8,85.2 M128.8,81.2c-15.7,0-28.5,12.8-28.5,28.5s12.8,28.5,28.5,28.5s28.5-12.8,28.5-28.5l0,0
+		C157.3,93.9,144.6,81.2,128.8,81.2z"/>
+</g>
+<g>
+	<circle class="doing1" cx="117.5" cy="109.5" r="3.5"/>
+</g>
+<g>
+	<circle class="doing1" cx="128.5" cy="109.5" r="3.5"/>
+</g>
+<g>
+	<circle class="doing1" cx="139.5" cy="109.5" r="3.5"/>
+</g>
+</svg>
