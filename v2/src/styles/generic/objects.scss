@@ -21,9 +21,6 @@ button {
       margin-right: 0.5rem;
       vertical-align: middle;
     }
-    &:focus {
-      outline: none;
-    }
   }
   &.full {
     background: $brand-color-1;

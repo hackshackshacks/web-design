@@ -133,6 +133,10 @@
         min-width: 0;
         transition: 300ms;
         position: relative;
+        border: 2px solid transparent;
+        &:focus-within {
+          border: 2px solid $base-color-dark;
+        }
         summary {
           user-select: none;
           font-weight: 500;
