@@ -39,4 +39,4 @@ I divided the form into 5 parts. Each part has it's own state. This way the user
 * [x] Made origin and destination larger in the ticket views
 * [x] Used colors with more contrast for highlights and buttons
 * [x] Added option to add multiple passengers
-* [] Remove return date field after picking single trip
+* [ ] Remove return date field after picking single trip
