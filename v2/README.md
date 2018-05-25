@@ -124,6 +124,7 @@ After building V1 I learned the following lessons:
 * The moodle structure is flawed and requires to be divided in smaller parts.
 * I need to think about what's important more. What are the focal points on my website?
 * I need to focus more on the users I am designing for and what they need from a design perspective, not just usability.
+* The website lacks a strong flow.
 
 ## New User - Suus
 
