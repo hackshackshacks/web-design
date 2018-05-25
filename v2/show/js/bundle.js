@@ -2,7 +2,8 @@
 
 var app = {
   elements: {
-    addBtns: document.querySelectorAll('.add')
+    addBtns: document.querySelectorAll('.add'),
+    navPlan: document.querySelector('.plan')
   },
   init: function init() {
     this.handleEvents();
@@ -10,10 +11,13 @@ var app = {
     todo.init();
   },
   handleEvents: function handleEvents() {
+    var _this = this;
+
     this.elements.addBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         console.log('test');
         var tooltip = btn.parentElement.querySelector('span');
+        animations.added(_this.elements.navPlan);
         if (btn.classList.contains('added')) {
           animations.pop(btn);
           btn.classList.remove('added');
@@ -116,11 +120,11 @@ var todo = {
     this.btnCount = this.elements.deleteBtns.length + 1;
   },
   handleEvents: function handleEvents() {
-    var _this = this;
+    var _this2 = this;
 
     this.elements.submit.addEventListener('click', function (e) {
       e.preventDefault();
-      _this.createItem(_this.elements.input.value);
+      _this2.createItem(_this2.elements.input.value);
     });
     this.elements.deleteBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -151,6 +155,12 @@ var animations = {
     setTimeout(function () {
       el.classList.remove('active');
     }, 300);
+  },
+  added: function added(el) {
+    el.classList.remove('added');
+    setTimeout(function () {
+      el.classList.add('added');
+    }, 1);
   }
 };
 app.init();

@@ -58,6 +58,12 @@ fieldset {
   to {
     opacity: 1; } }
 
+@keyframes popIn {
+  70% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
 body {
   font-family: "Hind";
   background: #f3f2f5; }
@@ -91,8 +97,6 @@ button {
     background-repeat: no-repeat;
     margin-right: 0.5rem;
     vertical-align: middle; }
-  button.add:focus {
-    outline: none; }
   button.full {
     background: #481ef7;
     color: #fff; }
@@ -125,6 +129,18 @@ body > header {
       color: #151515; }
       body > header nav li.active:after {
         background: #481ef7; }
+    body > header nav li.plan.added::before {
+      animation: popIn 300ms forwards; }
+    body > header nav li.plan::before {
+      content: '';
+      position: absolute;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 100px;
+      background: #481ef7;
+      top: 8px;
+      right: -10px;
+      transform: scale(0); }
     body > header nav li:after {
       content: '';
       position: absolute;
@@ -254,13 +270,27 @@ body > header {
         border-radius: 5px;
         display: inline-block;
         min-width: 0;
-        transition: 300ms; }
+        transition: 300ms;
+        position: relative;
+        border: 2px solid transparent; }
+        .mainBlock main .information details:focus-within {
+          border: 2px solid #151515; }
         .mainBlock main .information details summary {
           user-select: none;
           font-weight: 500;
           padding: 1rem; }
           .mainBlock main .information details summary:focus {
             outline: none; }
+        .mainBlock main .information details.appointment:not([open])::after {
+          content: '';
+          width: 1.5rem;
+          height: 1.5rem;
+          position: absolute;
+          right: -2.5rem;
+          top: 50%;
+          transform: translatey(-50%);
+          background: url("../images/icons/appointment@2x.png");
+          background-size: contain; }
         .mainBlock main .information details .details {
           padding: 0 1rem 1rem 1rem; }
         .mainBlock main .information details[open] {
@@ -306,7 +336,7 @@ body > header {
           margin-right: 0.1875rem; }
 
 .timeslots {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
