@@ -1,6 +1,7 @@
 const app = {
   elements: {
-    addBtns: document.querySelectorAll('.add')
+    addBtns: document.querySelectorAll('.add'),
+    navPlan: document.querySelector('.plan')
   },
   init: function() {
     this.handleEvents()
@@ -12,6 +13,7 @@ const app = {
       btn.addEventListener('click', () => {
         console.log('test')
         let tooltip = btn.parentElement.querySelector('span')
+        animations.added(this.elements.navPlan)
         if (btn.classList.contains('added')) {
           animations.pop(btn)
           btn.classList.remove('added')
@@ -161,6 +163,12 @@ const animations = {
     setTimeout(() => {
       el.classList.remove('active')
     }, 300)
+  },
+  added: function(el) {
+    el.classList.remove('added')
+    setTimeout(() => {
+      el.classList.add('added')
+    }, 1)
   }
 }
 app.init()

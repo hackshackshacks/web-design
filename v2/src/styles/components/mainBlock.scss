@@ -132,12 +132,28 @@
         display: inline-block;
         min-width: 0;
         transition: 300ms;
+        position: relative;
         summary {
           user-select: none;
           font-weight: 500;
           padding: 1rem;
           &:focus {
             outline: none;
+          }
+        }
+        &.appointment {
+          &:not([open]) {
+            &::after {
+              content: '';
+              width: 1.5rem;
+              height: 1.5rem;
+              position: absolute;
+              right: -2.5rem;
+              top: 50%;
+              transform: translatey(-50%);
+              background: url('../images/icons/appointment@2x.png');
+              background-size: contain;
+            }
           }
         }
         .details {
